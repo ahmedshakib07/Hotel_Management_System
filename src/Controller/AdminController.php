@@ -177,6 +177,7 @@ class AdminController extends AppController{
             // dd($data);
             // $this->Flash->success('Profile Update Successfully');
             // return $this->redirect(['action'=>'profile']);
+            // jibone Prochur prosrom korte hobe
         }
         
         $this->set(compact('data'));
