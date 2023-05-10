@@ -161,7 +161,7 @@ class AdminController extends AppController{
     public function profile($id=null){
         
         $connection = ConnectionManager::get('cakedb');
-        dd($data);
+        //dd($data);
         $data = $connection->execute('SELECT * FROM user WHERE id = '.$id.'')->fetchAll('assoc');
         $data = $data[0];
         
