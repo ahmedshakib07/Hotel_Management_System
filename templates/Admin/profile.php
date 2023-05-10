@@ -200,7 +200,7 @@ endif;
 
 
     <!-- Profile start-->
-    <form id="test-form" class="white-popup-block mfp-hide" method="POST" action="<?= PROJECT_ROOT ?>admin/profile/<?= $data['id'] ?>">
+    <form method="POST" action="<?= PROJECT_ROOT ?>profile/<?= $data['id'] ?>">
         <div class="container">
             <h2> <?=$data['name']?> </h2>
             <!-- <p>Image at the top (card-img-top):</p> -->

@@ -161,8 +161,8 @@ class AdminController extends AppController{
     public function profile($id=null){
         
         $connection = ConnectionManager::get('cakedb');
-        //dd($data);
-        $data = $connection->execute('SELECT * FROM user ')->fetchAll('assoc');
+        dd($data);
+        $data = $connection->execute('SELECT * FROM user WHERE id = '.$id.'')->fetchAll('assoc');
         $data = $data[0];
         
         if ($this->request->is(['patch', 'post', 'put'])){
